@@ -1,0 +1,34 @@
+{
+  "name": "data-populator",
+  "version": "1.0.0",
+  "description": "Automated updater for psychedelic therapy accessibility data",
+  "main": "data-populator.js",
+  "type": "module",
+  "scripts": {
+    "start": "node data-populator.js",
+    "test": "node --test test/",
+    "dev": "node --watch data-populator.js",
+    "setup": "npm install && node setup-check.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "cheerio": "^1.1.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^5.21.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.6.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "psychedelic",
+    "data",
+    "automation",
+    "api",
+    "web-scraping"
+  ],
+  "author": "Ben Cohen",
+  "license": "MIT"
+}
